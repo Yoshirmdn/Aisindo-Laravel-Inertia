@@ -36,6 +36,7 @@ class ProfileController extends Controller
         $data = $request->validated();
 
         // Only include avatar in data if a new file was uploaded
+        //bug avatar can update
         if ($request->hasFile('avatar')) {
             // Delete the old avatar file if it exists
             if ($request->user()->avatar) {

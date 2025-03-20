@@ -20,7 +20,7 @@ export default function UpdateProfileInformation({
             department: user.department || "",
             institute_address: user.institute_address || "",
             expertise: user.expertise || "",
-            avatar: null,
+            avatar: null, //bug avatar can update
         });
 
     const submit = (e) => {
